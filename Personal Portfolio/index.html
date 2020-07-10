@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" type="image/png"
+    href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+  <link rel="shortcut icon" type="image/x-icon" href="./images/yarosFace.jpg" />
+  <title>Personal Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+
+
+
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+
+  <a class="menu-link" href="#menu">
+    <span></span>
+  </a>
+
+  <nav id="navbar" class="menu">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">About</a>
+      </li>
+      <li>
+        <a href="#certifications">Certifications</a>
+      </li>
+      <li>
+        <a href="#competencies">Competencies</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="welcome-section" class="welcome-section">
+    <div>
+      <div>
+        <h1 style="border-bottom: 0.2rem solid var(--main-blue);">Hey I am Yaros</h1>
+        <p style="margin: 13px 0 15px 0; text-align: center;">a web developer</p>
+      </div>
+      <div id="button">
+        <a href="#0" class="button">
+          <span class="button__line button__line--top"></span>
+          <span class="button__line button__line--right"></span>
+          <span class="button__line button__line--bottom"></span>
+          <span class="button__line button__line--left"></span>
+          Show CV
+        </a>
+      </div>
+    </div>
+    <div id="face">
+      <img id="yaros_face" src="./images/yarosFace.jpg" alt="Yaros's face">
+    </div>
+  </section>
+
+  <section id="certifications" class="certifications-section">
+    <h2 class="certifications-section-header">Certifications</h2>
+    <div class="fotorama" data-width="auto" data-height="86%" data-allowfullscreen="true" data-loop="true">
+      <img src="./images/1.png" alt="Full Stack Certification">
+      <img src="./images/2.png" alt="Responsive Web Design Certification">
+      <img src="./images/3.png" alt="JavaScript Algorithms and Data Structures Certification">
+      <img src="./images/4.png" alt="Front End Libraries Certification">
+      <img src="./images/5.png" alt="Data Visualization Certification">
+      <img src="./images/6.png" alt="API's and Microservices Certification">
+      <img src="./images/7.png" alt="Information Security And Quality Assurance Certification">
+    </div>
+  </section>
+
+  <section id="competencies" class="competencies-section">
+    <h2 class="competencies-section-header">Competencies</h2>
+    <a href="#0" onclick="show_hide('responsive-web-design', 'tri1');" class="competencies">
+      <svg id="tri1" viewBox="0 0 100 100" width="18px">
+        <polygon points="-6.04047,17.1511 81.8903,58.1985 -3.90024,104.196"
+          transform="matrix(0.999729, 0.023281, -0.023281, 0.999729, 7.39321, -10.0425)"
+          style="stroke: var(--primary-color); fill: var(--main-blue); stroke-width: 1px;"></polygon>
+      </svg>
+      <h4>Responsive Web Design Certification</h4>
+    </a>
+    <div id="responsive-web-design" class="tab">
+      <ul>
+        <li>
+          <h4>Basic HTML and HTML5</h4>
+        </li>
+        <li>
+          <h4>Basic CSS</h4>
+        </li>
+        <li>
+          <h4>Applied Visual Design</h4>
+        </li>
+        <li>
+          <h4>Applied Accessibility</h4>
+        </li>
+        <li>
+          <h4>Responsive Web Design Principles</h4>
+        </li>
+        <li>
+          <h4>CSS Flexbox</h4>
+        </li>
+        <li>
+          <h4>CSS Grid</h4>
+        </li>
+        <li>
+          <h4>Responsive Web Design Projects</h4>
+        </li>
+      </ul>
+    </div>
+
+    <a href="#0" onclick="show_hide('javascript-algorithms-and-data-structures', 'tri2');" class="competencies">
+      <svg id="tri2" viewBox="0 0 100 100" width="18px">
+        <polygon points="-6.04047,17.1511 81.8903,58.1985 -3.90024,104.196"
+          transform="matrix(0.999729, 0.023281, -0.023281, 0.999729, 7.39321, -10.0425)"
+          style="stroke: var(--primary-color); fill: var(--primary-color); stroke-width: 1px;"></polygon>
+      </svg>
+      <h4>JavaScript Algorithms and Data Structures Certification</h4>
+    </a>
+    <div id="javascript-algorithms-and-data-structures" class="tab">
+      <ul>
+        <li>
+          <h4>Basic JavaScript</h4>
+        </li>
+        <li>
+          <h4>ES6</h4>
+        </li>
+        <li>
+          <h4>Regular Expressions</h4>
+        </li>
+        <li>
+          <h4>Debugging</h4>
+        </li>
+        <li>
+          <h4>Basic Data Structures</h4>
+        </li>
+        <li>
+          <h4>Basic Algorithm Scripting</h4>
+        </li>
+        <li>
+          <h4>Object Oriented Programming</h4>
+        </li>
+        <li>
+          <h4>Functional Programming</h4>
+        </li>
+        <li>
+          <h4>Intermediate Algorithm Scripting</h4>
+        </li>
+        <li>
+          <h4>JavaScript Algorithms and Data Structures Projects</h4>
+        </li>
+      </ul>
+    </div>
+
+    <a href="#0" onclick="show_hide('front-end-libraries', 'tri3');" class="competencies">
+      <svg id="tri3" viewBox="0 0 100 100" width="18px">
+        <polygon points="-6.04047,17.1511 81.8903,58.1985 -3.90024,104.196"
+          transform="matrix(0.999729, 0.023281, -0.023281, 0.999729, 7.39321, -10.0425)"
+          style="stroke: var(--primary-color); fill: var(--main-blue); stroke-width: 1px;"></polygon>
+      </svg>
+      <h4>Front End Libraries Certification</h4>
+    </a>
+    <div id="front-end-libraries" class="tab">
+      <ul>
+        <li>
+          <h4>Bootstrap</h4>
+        </li>
+        <li>
+          <h4>jQuery</h4>
+        </li>
+        <li>
+          <h4>Sass</h4>
+        </li>
+        <li>
+          <h4>React</h4>
+        </li>
+        <li>
+          <h4>Redux</h4>
+        </li>
+        <li>
+          <h4>React and Redux</h4>
+        </li>
+        <li>
+          <h4>Front End Libraries Projects</h4>
+        </li>
+      </ul>
+    </div>
+
+    <a href="#0" onclick="show_hide('data-visualization', 'tri4');" class="competencies">
+      <svg id="tri4" viewBox="0 0 100 100" width="18px">
+        <polygon points="-6.04047,17.1511 81.8903,58.1985 -3.90024,104.196"
+          transform="matrix(0.999729, 0.023281, -0.023281, 0.999729, 7.39321, -10.0425)"
+          style="stroke: var(--primary-color); fill: var(--primary-color); stroke-width: 1px;"></polygon>
+      </svg>
+      <h4>Data Visualization Certification</h4>
+    </a>
+    <div id="data-visualization" class="tab">
+      <ul>
+        <li>
+          <h4>Data Visualization with D3</h4>
+        </li>
+        <li>
+          <h4>JSON APIs and Ajax</h4>
+        </li>
+        <li>
+          <h4>Data Visualization Projects</h4>
+        </li>
+      </ul>
+    </div>
+
+    <a href="#0" onclick="show_hide('apis-and-microservices', 'tri5');" class="competencies">
+      <svg id="tri5" viewBox="0 0 100 100" width="18px">
+        <polygon points="-6.04047,17.1511 81.8903,58.1985 -3.90024,104.196"
+          transform="matrix(0.999729, 0.023281, -0.023281, 0.999729, 7.39321, -10.0425)"
+          style="stroke: var(--primary-color); fill: var(--main-blue); stroke-width: 1px;"></polygon>
+      </svg>
+      <h4>APIs and Microservices Certifications</h4>
+    </a>
+    <div id="apis-and-microservices" class="tab">
+      <ul>
+        <li>
+          <h4>Managing Packages with Npm</h4>
+        </li>
+        <li>
+          <h4>Basic Node and Express</h4>
+        </li>
+        <li>
+          <h4>MongoDB and Mongoose</h4>
+        </li>
+        <li>
+          <h4>APIs and Microservices Projects</h4>
+        </li>
+      </ul>
+    </div>
+
+    <a href="#0" onclick="show_hide('quality-assurance', 'tri6');" class="competencies">
+      <svg id="tri6" viewBox="0 0 100 100" width="18px">
+        <polygon points="-6.04047,17.1511 81.8903,58.1985 -3.90024,104.196"
+          transform="matrix(0.999729, 0.023281, -0.023281, 0.999729, 7.39321, -10.0425)"
+          style="stroke: var(--primary-color); fill: var(--primary-color); stroke-width: 1px;"></polygon>
+      </svg>
+      <h4>Information Security & Quality Assurance Certification</h4>
+    </a>
+    <div id="quality-assurance" class="tab">
+      <ul>
+        <li>
+          <h4>Information Security with HelmetJS</h4>
+        </li>
+        <li>
+          <h4>Quality Assurance and Testing with Chai</h4>
+        </li>
+        <li>
+          <h4>Advanced Node and Express</h4>
+        </li>
+        <li>
+          <h4>Information Security & Quality Assurance Projects</h4>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2 class="projects-section-header">These are some of my projects</h2>
+    <div class="projects-grid">
+      <a href="https://codepen.io/yaroskr/full/oNbdyxL" target="_blank" class="project project-tile">
+        <img class="project-image" src="./images/pomodoro.png" alt="project" />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Pomodoro Clock
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://neat-amazing-kitchen.glitch.me/" target="_blank" class="project project-tile">
+        <img class="project-image"
+          src="./images/regForm.png"
+          alt="project" />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Home Page Reg Form
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://codepen.io/yaroskr/full/xxZjJwr" target="_blank" class="project project-tile">
+        <img class="project-image" src="./images/calculator.png" alt="project" />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          JavaScript Calculator
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://zippy-faceted-dianella.glitch.me" target="_blank" class="project project-tile">
+        <img class="project-image"
+          src="./images/stockPriceChkr.png"
+          alt="project" />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Stock Price Cheker
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://codepen.io/yaroskr/full/vYLjrje" target="_blank" class="project project-tile">
+        <img class="project-image" src="./images/wikiViewer.png" alt="project" />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Wikipedia Viewer
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://codepen.io/yaroskr/full/eYJrjjR" target="_blank" class="project project-tile">
+        <img class="project-image"
+          src="./images/drumMachine.png"
+          alt="project" />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Drum Machine
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+    <a href="https://codepen.io/yaroskr/" class="btn btn-show-all" target="_blank">Show more Front End Projects<i
+        class="fas fa-chevron-right"></i></a>
+    <a href="https://glitch.com/@YarosKr" class="btn btn-show-all" target="_blank">Show more Back End Projects<i
+        class="fas fa-chevron-right"></i></a>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Let's work together...</h2>
+      <p>How can you connect with me?</p>
+    </div>
+    <div class="contact-links">
+      <a id="profile-link" href="https://github.com/YarosKr" target="_blank" class="btn contact-details"><i
+          class="fab fa-github"></i> GitHub</a>
+      <a href="mailto:yarosfkr@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+      <a href="tel:063-602-2375" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      **This is a portfolio. All the projects and contact details given
+      are real.
+    </p>
+    <p>
+      &copy; Created by
+      <a href="https://github.com/YarosKr" target="_blank">Yaros Kryvenko</a>
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      let link = $('.menu-link');
+      let link_active = $('.menu-link_active');
+      let menu = $('.menu');
+      let nav_link = $('.menu a')
+
+      link.click(function () {
+        link.toggleClass('menu-link_active');
+        menu.toggleClass('menu_active');
+      });
+      nav_link.click(function () {
+        link.toggleClass('menu-link_active');
+        menu.toggleClass('menu_active');
+      });
+    });
+  </script>
+</body>
+
+</html>
