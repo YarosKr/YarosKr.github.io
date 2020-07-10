@@ -233,7 +233,6 @@ img {
 .certifications-section {
   height: 100vh;
   background-color: var(--main-cyan);
-  padding-left: 40px;
 }
 
 .certifications-section-header {
@@ -241,6 +240,12 @@ img {
   max-width: 640px;
   margin: 0 auto 1.7rem auto;
   border-bottom: 0.2rem solid white;
+}
+
+#slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Competencies section */
@@ -255,16 +260,15 @@ img {
 }
 
 .competencies {
-  display: flex; 
+  display: flex;
   text-decoration: none;
   padding: 5px;
-  margin-left: 30rem;
   text-indent: 5pt;
 }
 
 .tab {
   font-size: 1.7rem;
-  text-indent: 260pt;
+  text-indent: 30pt;
   display:none;
 }
 
@@ -273,6 +277,13 @@ img {
   max-width: 640px;
   margin: 0 auto 1.7rem auto;
   border-bottom: 0.2rem solid white;
+}
+
+#competencies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Projects section */
